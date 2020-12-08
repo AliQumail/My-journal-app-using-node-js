@@ -1,0 +1,26 @@
+<%-include("header");-%>
+
+<div class="container mt-4">
+
+
+
+<h3 >Home</h3>
+<p class="textdiv">Welcome to the Daily Journal website. We are excited to see you here. Starting writing your journals by clicking the button below and enjoy the site !</p>
+  <a href="/compose" class=".text-center composebutton"><button type="submit" name="button" class="btn btn-warning mt-2 mb-4 .text-center">compose</button></a>
+
+
+  <% journals.forEach((item, i) => { %>
+    <div class="homeJournal mt-2 mb-4 bg-light">
+      <h4><%=item.title%></h4>
+    <%  if ( item.body.length > 100 ){ %>
+         <p><%=item.body.substring(0,100)%> ... <a href="/journals/<%=item._id%>">read more</a> </p>
+    <%  } else {  %>
+         <p class="journalbodydiv"><%=item.body%></p>
+    <%  } %>
+      </div>
+    <%  }); %>
+
+</div>
+
+
+<%-include("footer");-%>

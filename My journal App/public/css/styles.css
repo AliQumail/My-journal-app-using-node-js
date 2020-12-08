@@ -1,0 +1,47 @@
+html{
+ min-height: 100%;
+ position:relative;
+}
+.navDiv{
+  background-color:#F2F3F4  ;
+}
+.moveRight{
+  position:absolute;
+  right:30px;
+  font-size: 1.2rem;
+}
+.navbar-brand{
+  font-size: 1.7rem;
+}
+
+.contactdetails{
+  font-size: 1.2rem;
+}
+
+.composebutton{
+  align-self: center;
+}
+
+.homeJournal{
+  padding: 5px;
+}
+.textdiv{
+  font-size:1.4rem;
+}
+.journalbodydiv{
+  font-size: 1.2rem;
+}
+
+.footer-padding {
+	padding-bottom: 60px;
+}
+
+.footer {
+	position: absolute;
+	text-align: center;
+	bottom: 0;
+	width: 100%;
+	height: 60px;
+	background-color: #1abc9c;
+  padding:19px;
+}
